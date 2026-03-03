@@ -3,11 +3,7 @@
 #include <stdio.h>
 /* main description */
 
-/**
- * main prints whether random number is positive, negative or zero
- * Return: Alwys 0
- */
-
+/*  main prints whether random number is positive, negative or zero */
 int main(void)
 {
 	int n;
