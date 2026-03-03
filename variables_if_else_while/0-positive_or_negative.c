@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+/* main description */
+
 /**
  * main prints whether random number is positive, negative or zero
  * Return: Alwys 0
