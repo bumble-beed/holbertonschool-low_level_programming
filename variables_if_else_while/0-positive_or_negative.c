@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- * main description
- * and calculation
+ * main - prints if random number is postive, zero or negative
+ *
  * return 0
  */
 int main(void)
