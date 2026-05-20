@@ -4,7 +4,7 @@
 
 /**
  * main description
- * and calculation 
+ * and calculation
  * return 0
  */
 int main(void)
