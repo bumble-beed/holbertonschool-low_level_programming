@@ -7,12 +7,13 @@
  */
 int main(void)
 {
-	char ch = 'a' && 'A';
+	char lower_ch = 'a';
+	char upper_ch = 'A';
 
-	while (ch <= 'z')
-		putchar(ch++);
-	while (ch <= 'Z')
-		putchar(ch++);
+	while (lower_ch <= 'z')
+		putchar(lower_ch++);
+	while (upper_ch <= 'Z')
+		putchar(upper_ch++);
 	putchar('\n');
 
 	return (0);
