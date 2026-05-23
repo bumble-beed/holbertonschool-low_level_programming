@@ -12,9 +12,10 @@ int main(void)
 	while (lower_case <= 'z')
 	{
 		if ((lower_case != 'q') && (lower_case != 'e'))
-			putchar(lower_case++);
-	putchar('\n');
+			putchar(lower_case);
+		lower_case++;
 	}
+	putchar('\n');
 
 return (0);
 }
