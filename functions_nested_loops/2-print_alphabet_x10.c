@@ -2,6 +2,7 @@
 
 /**
  * main - prints alphabet 10x
+ * Description: print lowercase 10x
  *
  * Return: void
  */
