@@ -1,19 +1,18 @@
-#include <main.h>
+#include "main.h"
 
 /**
- * main - prints the alphabet, followed by a new line using prototype and putchar
+ * print_alphabet - prints the alphabet followed by a new line
  *
- * Return: 0
+ * Return: void
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
-	char lower_case = 'a';
-	
-	while (lower_case <= 'z')
+	char c = 'a';
+
+	while (c <= 'z')
 	{
 		_putchar(c);
-		lower_case++;
+		c++;
 	}
 	_putchar('\n');
 }
-
