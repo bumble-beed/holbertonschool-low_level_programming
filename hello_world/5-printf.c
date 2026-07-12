@@ -2,7 +2,7 @@
 
 /**
 * main - prints single line
-* 
+*
 * Return: 0
 */
 int main(void)
