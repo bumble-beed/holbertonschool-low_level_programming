@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
-* int _islower - print lower_case
-*
+* _islower - print lower_case
+* @c: the character to check
+
 * Return: 1 for lowercase. Else return 0
 */
 int _islower(int c)
