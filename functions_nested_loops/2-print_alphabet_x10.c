@@ -1,0 +1,29 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+* print_alphabet_x10 - print alphabet 10x
+*
+* Return: void
+*/
+void print_alphabet_x10(void)
+{
+	int i;	
+	char lower_case;
+
+	lower_case = 'a';
+	i = 0;
+
+	while (i < 10)
+	{
+		while (lower_case <= 'z')
+		{
+			_putchar(lower_case);
+			lower_case++;
+		}
+	
+		_putchar('\n');
+	
+		i++;
+	}
+}
