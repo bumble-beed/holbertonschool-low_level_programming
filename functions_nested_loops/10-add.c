@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
-* add - adds two intergers
+* add - adds two intergers and returns result
 * @a: input 1
 * @b: input 2
-
+*
 * Return: Addition result
 */
 int add(int a, int b)
