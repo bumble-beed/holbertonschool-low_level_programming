@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* abs: print absolute value of interger
+* _abs: print absolute value of interger
 * @n: input number
 *
 * Return: absolute value
