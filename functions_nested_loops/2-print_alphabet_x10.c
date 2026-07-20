@@ -15,7 +15,7 @@ void print_alphabet_x10(void)
 
 	while (i < 10)
 	{
-		lower_case = 'a'
+		lower_case = 'a';
 
 		while (lower_case <= 'z')
 		{
