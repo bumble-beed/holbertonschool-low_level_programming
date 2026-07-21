@@ -3,19 +3,15 @@
 
 /**
 * print_numbers - prints number 0 to 9
-* @n: number to check
 *
 * Return: print 0 to 9
 */
 void print_numbers(void)
 {
-	int n;
+	char a;
 
-	n = '0';
-	if (n >= '0' && n <= '9')
-	{
-		_putchar(n);
-		n++;
-	}
+	for (a = 48; a <= 57; a++)
+		_putchar(a);
+
 	_putchar('\n');
 }
