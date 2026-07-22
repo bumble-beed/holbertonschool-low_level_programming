@@ -10,6 +10,8 @@
 */
 int main(void)
 {
+	int choice;
+
 	printf("Simple Calculator\n");
 	printf("\n");
 	printf("1) Add\n");
@@ -20,8 +22,7 @@ int main(void)
 	printf("Choice: 0\n");
 	printf("Bye\n");
 
-	int choice;
-
+	choice = '0';
 	if (choice  == '0')
 		printf("Quit\n");
 
