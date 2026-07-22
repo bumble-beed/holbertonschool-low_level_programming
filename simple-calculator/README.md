@@ -2,11 +2,11 @@
 Build and run a terminal based interactive calculator using C programming language
 
 ## Compile command (exact flags)
-gcc -Wall - Wextra -Werror -pedantic -std=gnu89 calculator.c -o simple_cal
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 calculator.c -o calculator
 
 ## Run instructions
 To run 
-- ./simple_cal
+- ./calculator
 
 ## Supported operations
 | Choice | Operation | Symbol | Example         | Result |
@@ -15,7 +15,7 @@ To run
 | 2      | Subtract  | `-`    | `6 - 4`         | `2`    |
 | 3      | Multiply  | `*`    | `6 * 4`         | `24`   |
 | 4      | Divide    | `/`    | `6 / 4`         | `1`    |
-| q      | Quit      | —      | exits the loop  | —      |
+| 0      | Quit      | —      | exits the loop  | —      |
 
 ### Iteration 1
 - Arithmic operators not including '%', '++', '--"
