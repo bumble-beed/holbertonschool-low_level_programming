@@ -17,13 +17,34 @@ To run
 | 4      | Divide    | `/`    | `6 / 4`         | `1`    |
 | 0      | Quit      | —      | exits the loop  | —      |
 
-### Iteration 1
-- Arithmic operators not including '%', '++', '--"
-- Only positive values
-- Only whole numbers (intergers)
-### Iteration 2
+#### Iteration 0
+- Print a welcome line.
+- Display a menu.
+- Allow quitting with option 0.
+- Ensure the program compiles and runs.
+
+#### Iteration 1
+- The menu must loop.
+- If the user enters a number not in the menu, print
+
+#### Iteration 2
+- Implement addition end-to-end.
+
+#### Iteration 3
+- Implement subtraction.
+
+#### Iteration 4
+- Implement multiplication.
+
+#### Iteration 5
+- Implement divison.
+
+#### Future Implementation
 - tbc
 - decimals (floats)
 - double (6 decimals)
 
 ## Known limitations (if any)
+- Arithmic operators not including '%', '++', '--"
+- Only positive values
+- Only whole numbers (intergers)
