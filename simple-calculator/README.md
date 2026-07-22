@@ -1,11 +1,29 @@
-README.md including:
+# Simple Calculator
+Build and run a terminal based interactive calculator using C programming language
 
-compile command (exact flags)
-gcc -Wall - Wextra -Werror -pedantic -std=gnu89 calculator.c main.c -o simple_cal
-run instructions
+## Compile command (exact flags)
+gcc -Wall - Wextra -Werror -pedantic -std=gnu89 calculator.c -o simple_cal
 
-supported operations
+## Run instructions
+To run 
+- ./simple_cal
 
-numeric behavior (integer vs decimal)
+## Supported operations
+| Choice | Operation | Symbol | Example         | Result |
+| ------ | --------- | ------ | --------------- | ------ |
+| 1      | Add       | `+`    | `6 + 4`         | `10`   |
+| 2      | Subtract  | `-`    | `6 - 4`         | `2`    |
+| 3      | Multiply  | `*`    | `6 * 4`         | `24`   |
+| 4      | Divide    | `/`    | `6 / 4`         | `1`    |
+| q      | Quit      | —      | exits the loop  | —      |
 
-known limitations (if any)
+### Iteration 1
+- Arithmic operators not including '%', '++', '--"
+- Only positive values
+- Only whole numbers (intergers)
+### Iteration 2
+- tbc
+- decimals (floats)
+- double (6 decimals)
+
+## Known limitations (if any)
