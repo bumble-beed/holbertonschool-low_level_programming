@@ -25,6 +25,8 @@ int main(void)
 	choice = '0';
 	if (choice  == '0')
 		printf("Quit\n");
+	else if(choice > '0' && choice <= '9')
+		printf("Invalid choice\n");
 
 return (0);
 }
