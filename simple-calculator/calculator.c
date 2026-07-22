@@ -20,9 +20,10 @@ int main(void)
 	printf("Choice: 0\n");
 	printf("Bye\n");
 
-	if (num1, num2  == '0')
+	int choice;
+
+	if (choice  == '0')
 		printf("Quit\n");
-		break;
 
 return (0);
 }
