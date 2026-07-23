@@ -41,6 +41,27 @@ int main(void)
 			result = num1 + num2;
 			printf("%lf + %lf = %lf\n", num1, num2, result);
 		}
+		if (choice == 2)
+		{
+			printf("Enter 2 numbers separated by a , \n");
+			scanf("%lf, %lf", &num1, &num2);
+			result = num1 - num2;
+			printf("%lf - %lf = %lf\n", num1, num2, result);
+		}
+		if (choice == 3)
+		{
+			printf("Enter 2 numbers separated by a , \n");
+			scanf("%lf, %lf", &num1, &num2);
+			result = num1 * num2;
+			printf("%lf * %lf = %lf\n", num1, num2, result);
+		}
+		if (choice == 4)
+		{
+			printf("Enter 2 numbers separated by a , \n");
+			scanf("%lf, %lf", &num1, &num2);
+			result = num1 / num2;
+			printf("%lf / %lf = %lf\n", num1, num2, result);
+		}
 	}
 
 	return (0);
