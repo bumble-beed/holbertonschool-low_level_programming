@@ -47,6 +47,7 @@ To run
 ## Known limitations (if any)
 - Arithmic operators not including '%', '++', '--"
 - Needs separator , when entering num1 & num2
+- Handle loop back to calculator instead of exiting when calculation is done
 
 ## Calculator Versions
 - V1 - Without module named 'checker_functions
