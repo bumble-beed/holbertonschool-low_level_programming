@@ -40,11 +40,13 @@ To run
 - Implement divison.
 
 #### Future Implementation
-- tbc
-- decimals (floats)
-- double (6 decimals)
+- Handle error when no , used when entering num1, num2
+- Handle loop back to calculator instead of exiting when calculation is done
+- Switch case instead of loop
 
 ## Known limitations (if any)
 - Arithmic operators not including '%', '++', '--"
-- Only positive values
-- Only whole numbers (intergers)
+- Needs separator , when entering num1 & num2
+
+## Calculator Versions
+- V1 - Without module named 'checker_functions
