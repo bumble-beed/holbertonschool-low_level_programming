@@ -11,6 +11,7 @@
 int main(void)
 {
 	int choice;
+	double num1, num2, result;
 
 	printf("Simple Calculator\n");
 	printf("\n");
@@ -19,14 +20,28 @@ int main(void)
 	printf("3) Multiply\n");
 	printf("4) Divide\n");
 	printf("0) Quit\n");
-	printf("Choice: 0\n");
-	printf("Bye\n");
-
-	choice = '0';
-	if (choice  == '0')
-		printf("Quit\n");
-	else if(choice > '0' && choice <= '9')
+	printf("\n");
+	printf("Enter your Choice: \n");
+	scanf("%d", &choice);
+	
+	if (choice == 0)
+	{
+		printf("Byeeeeee\n");
+	}
+	else if (choice < 0 || choice > 4)
+	{
 		printf("Invalid choice\n");
+	}
+	else
+	{
+		if (choice == 1)
+		{
+			printf("Enter 2 numbers separated by a , \n");
+			scanf("%lf, %lf", &num1, &num2);
+			result = num1 + num2;
+			printf("%lf + %lf = %lf\n", num1, num2, result);
+		}
+	}
 
-return (0);
+	return (0);
 }
