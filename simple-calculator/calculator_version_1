@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+/**
+* main - arithmic calulation value of 2 operends
+*
+* Return: calculated value
+*/
+int main(void)
+{
+	int choice;
+	double num1, num2, result;
+
+	printf("Simple Calculator\n");
+	printf("\n");
+	printf("1) Add\n");
+	printf("2) Subtract\n");
+	printf("3) Multiply\n");
+	printf("4) Divide\n");
+	printf("0) Quit\n");
+	printf("\n");
+	printf("Enter your Choice: \n");
+	scanf("%d", &choice);
+	
+	if (choice == 0)
+	{
+		printf("Byeeeeee\n");
+	}
+	else if (choice < 0 || choice > 4)
+	{
+		printf("Invalid choice\n");
+	}
+	else
+	{
+		if (choice == 1)
+		{
+			printf("Enter 2 numbers separated by a , \n");
+			scanf("%lf, %lf", &num1, &num2);
+			result = num1 + num2;
+			printf("%lf + %lf = %lf\n", num1, num2, result);
+		}
+		if (choice == 2)
+		{
+			printf("Enter 2 numbers separated by a , \n");
+			scanf("%lf, %lf", &num1, &num2);
+			result = num1 - num2;
+			printf("%lf - %lf = %lf\n", num1, num2, result);
+		}
+		if (choice == 3)
+		{
+			printf("Enter 2 numbers separated by a , \n");
+			scanf("%lf, %lf", &num1, &num2);
+			result = num1 * num2;
+			printf("%lf * %lf = %lf\n", num1, num2, result);
+		}
+		if (choice == 4)
+		{
+			printf("Enter 2 numbers separated by a , \n");
+			scanf("%lf, %lf", &num1, &num2);
+			result = num1 / num2;
+			printf("%lf / %lf = %lf\n", num1, num2, result);
+		}
+	}
+
+	return (0);
+}
