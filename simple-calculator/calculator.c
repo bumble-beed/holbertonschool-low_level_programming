@@ -23,7 +23,7 @@ int main(void)
 	printf("\n");
 	printf("Enter your Choice: \n");
 	scanf("%d", &choice);
-	
+
 	if (choice == 0)
 	{
 		printf("Byeeeeee\n");
