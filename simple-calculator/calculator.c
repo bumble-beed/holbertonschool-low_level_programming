@@ -23,7 +23,7 @@ int main(void)
 	printf("\n");
 	printf("Enter your Choice: \n");
 	scanf("%d", &choice);
-	
+
 	if (choice == 0)
 	{
 		printf("Byeeeeee\n");
@@ -37,30 +37,30 @@ int main(void)
 		if (choice == 1)
 		{
 			printf("Enter 2 numbers separated by a , \n");
-			scanf("%lf, %lf", &num1, &num2);
+			scanf("%f, %f", &num1, &num2);
 			result = num1 + num2;
-			printf("%lf + %lf = %lf\n", num1, num2, result);
+			printf("%f + %f = %f\n", num1, num2, result);
 		}
 		if (choice == 2)
 		{
 			printf("Enter 2 numbers separated by a , \n");
-			scanf("%lf, %lf", &num1, &num2);
+			scanf("%f, %f", &num1, &num2);
 			result = num1 - num2;
-			printf("%lf - %lf = %lf\n", num1, num2, result);
+			printf("%f - %f = %f\n", num1, num2, result);
 		}
 		if (choice == 3)
 		{
 			printf("Enter 2 numbers separated by a , \n");
-			scanf("%lf, %lf", &num1, &num2);
+			scanf("%f, %f", &num1, &num2);
 			result = num1 * num2;
-			printf("%lf * %lf = %lf\n", num1, num2, result);
+			printf("%f * %f = %f\n", num1, num2, result);
 		}
 		if (choice == 4)
 		{
 			printf("Enter 2 numbers separated by a , \n");
-			scanf("%lf, %lf", &num1, &num2);
+			scanf("%f, %f", &num1, &num2);
 			result = num1 / num2;
-			printf("%lf / %lf = %lf\n", num1, num2, result);
+			printf("%f / %f = %f\n", num1, num2, result);
 		}
 	}
 
