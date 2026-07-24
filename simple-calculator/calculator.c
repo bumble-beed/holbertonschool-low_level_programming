@@ -11,7 +11,7 @@
 int main(void)
 {
 	int choice;
-	double num1, num2, result;
+	float num1, num2, result;
 
 	printf("Simple Calculator\n");
 	printf("\n");
