@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-* main - fizzbizz
-* @void: return 
+* main - print 1 to 100, Fizz for multiples of 3, Buzz for multiples of 5, and FizzBuzz for multiples of both
+*
 * Return: 0 for success
 */
 int main(void)
@@ -10,23 +10,22 @@ int main(void)
 	int a;
 
 	for (a = 1; a < 100; a++)
-		if (a  % 3 == 3)
+		if (a  % 15 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizzbuzz");
 		}	
+		else if (a % 3 == 0)
+		{
+			printf("Fizz");
+		}
 		else if (a % 5 == 0)
 		{
-			printf("Buzz ");
-		}
-		else if (a % 15 == 0)
-		{
-			printf("FizzBuzz ");
+			printf("Buzz");
 		}
 		else
 		{
 			printf("%d ", a);
 		}
-	printf("Buzz");
 	printf("\n");
 	return (0);
 }
