@@ -53,7 +53,7 @@ Next, a multi-phase program was instrumented to see where execution time is actu
 | clock() | seconds | 0.000014 | 0.76% |
 
 ### Relation Between Runtime and Energy Consumption
-While no power or energy readings were taken directly, but for CPU-bound work, energy use scales with how long the processor stays active. This means execution time can act as a rough stand-in for energy cost.
+While no power or energy readings were taken directly, for CPU-bound work, energy use scales with how long the processor stays active. This means execution time can act as a rough stand-in for energy cost.
 Using relative differnce of naive algorithm's roughly 26,000x longer runtime implies it also consumes substantially more energy to complete the same task than the single-pass version
 Im the instrumented program, `PROCESS` also has the largest share (47%) suggesting it is the most energy-intensive of the three phases simply because it holds the CPU active the longest
 
