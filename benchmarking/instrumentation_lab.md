@@ -13,6 +13,8 @@
 - `TOTAL` covers the three phases back-to-back (BUILD_DATA + PROCESS + REDUCE), plus a tiny sliver of overhead from calling clock() itself six times in a row
 
 ## Results 
+| Process | Time | Result |
+| --- | --- | --- |
 | TOTAL | seconds | 0.001846 |
 | BUILD_DATA | seconds | 0.000518 |
 | PROCESS | seconds | 0.000872 |
