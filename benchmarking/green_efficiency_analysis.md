@@ -63,5 +63,5 @@ Im the instrumented program, `PROCESS` also has the largest share (47%) suggesti
 - 3 trials only 
 - OS background activity may affect results
 
-
 ### Practical Engineering Takeaway
+The biggest takeaway is that algorithm choice matters far more than small timing noise or minor code tweaks. The naive implementation was roughly 26,000x slower than the single-pass version for solving the same problem. This shows that picking a better algorithm is a much bigger win than micro-optimizing existing code. The phase breakdown shows the same thing: PROCESS took up the largest share of runtime, so that's the stage worth optimizing first if the goal is to reduce both runtime and energy use.
