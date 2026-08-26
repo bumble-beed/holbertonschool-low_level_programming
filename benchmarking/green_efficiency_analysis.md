@@ -37,10 +37,30 @@ Next, two different approaches to solving the same problem were compared to see 
 | Single-pass algorithm | 0.000028 |
 
 **Relative difference**
-0.728268 ÷ 0.000028 ≈ 26,010 — so the naive implementation is roughly 26,000 times slower than the single-pass implementation for solving the same problem.
+0.728268 ÷ 0.000028 ≈ 26,010
+Naive implementation is roughly 26,000 times slower than the single-pass implementation.
+
+##### Controlled Instrumentation Experiment
+Next, a multi-phase program was instrumented to see where execution time is actually spent within a single run, rather than just measuring one overall time. To do this, individual clock readings were placed around each of the three phases (BUILD_DATA, PROCESS, REDUCE) as well as around the whole sequence, so each stage's contribution to the total could be measured separately.
+
+**Results**
+| Process | Time | Result | Percentage |
+| --- | --- | --- | --- |
+| TOTAL | seconds | 0.001846 | |
+| BUILD_DATA | seconds | 0.000518 | 28.06% |
+| PROCESS | seconds | 0.000872 | 47.24% |
+| REDUCE | seconds | 0.000442 | 23.95% |
+| clock() | seconds | 0.000014 | 0.76% |
 
 ### Relation Between Runtime and Energy Consumption
+While no power or energy readings were taken directly during this experiment, energy use with CPU-bound core work is directly impacted. So execution time can be used to guide energy cost during implementation.
+Using relative differnce of naive algorithm's roughly 26,000x longer runtime implies it also consumes substantially more energy to complete the same task than the single-pass version
+Im the instrumented progra, `PROCESS` also has the largest share (47%) suggesting it is the most energy-intensive of the three phases simply because it holds the CPU active the longest
 
 ### Limitations of the Experiment
+- `clock()` - measures at whatever the OS provides
+- no power or engergy metering done
+- 3 trials only 
+- OS background activity may affect results
 
 ### Practical Engineering Takeaway
