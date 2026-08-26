@@ -46,21 +46,22 @@ Next, a multi-phase program was instrumented to see where execution time is actu
 **Results**
 | Process | Time | Result | Percentage |
 | --- | --- | --- | --- |
-| TOTAL | seconds | 0.001846 | |
+| TOTAL | seconds | 0.001846 | 100% |
 | BUILD_DATA | seconds | 0.000518 | 28.06% |
 | PROCESS | seconds | 0.000872 | 47.24% |
 | REDUCE | seconds | 0.000442 | 23.95% |
 | clock() | seconds | 0.000014 | 0.76% |
 
 ### Relation Between Runtime and Energy Consumption
-While no power or energy readings were taken directly during this experiment, energy use with CPU-bound core work is directly impacted. So execution time can be used to guide energy cost during implementation.
+While no power or energy readings were taken directly, but for CPU-bound work, energy use scales with how long the processor stays active. This means execution time can act as a rough stand-in for energy cost.
 Using relative differnce of naive algorithm's roughly 26,000x longer runtime implies it also consumes substantially more energy to complete the same task than the single-pass version
-Im the instrumented progra, `PROCESS` also has the largest share (47%) suggesting it is the most energy-intensive of the three phases simply because it holds the CPU active the longest
+Im the instrumented program, `PROCESS` also has the largest share (47%) suggesting it is the most energy-intensive of the three phases simply because it holds the CPU active the longest
 
 ### Limitations of the Experiment
-- `clock()` - measures at whatever the OS provides
+- `clock()` - measures at whatever the OS provides (TOTAL exceeded the summed phases by 0.000014s in this experiment)
 - no power or engergy metering done
 - 3 trials only 
 - OS background activity may affect results
+
 
 ### Practical Engineering Takeaway
