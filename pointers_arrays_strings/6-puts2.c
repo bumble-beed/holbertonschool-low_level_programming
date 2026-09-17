@@ -2,14 +2,15 @@
 
 /**
 * puts2 - print every other char
-* @s: string
+* @str: string
 */
 void puts2(char *str)
 {
     int i;
+
     i = 0;
 
-    while (str[i] != '\0')
+    while (str[i] != '\n')
     {
         if (i % 2 == 0)
         {
