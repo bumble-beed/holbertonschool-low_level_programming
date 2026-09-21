@@ -36,13 +36,11 @@ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 7-main.c 7-puts_half.c
 ```
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-main.c 8-print_array.c -o 8-print_array
 ```
-**Question 0**
+**Question 9**
 ```
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 9-main.c 9-strcpy.c -o 9-strcpy
 ```
-**Question 0**
+**Question 10**
 ```
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -fsanitize=signed-integer-overflow 100-main.c 100-atoi.c -o 100-atoi
 ```
-**Question 0**
-**Question 0**
-**Question 0**
-**Question 0**
