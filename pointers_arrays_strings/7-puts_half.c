@@ -20,8 +20,6 @@ void puts_half(char *str)
 
 	start = (len + 1)/ 2;
 	
-	fprintf(stderr, "len = %d, start = %d\n", len, start);
-
 	for (i = start; i < len; i++)
 	{
 		_putchar(str[i]);
